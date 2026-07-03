@@ -1,0 +1,219 @@
+{
+    "Lunari": {
+        "stats":{
+            "0": { "HP": 3, "MP": 3, "SP": 1},
+            "1": { "HP": 4, "MP": 4, "SP": 2},            
+            "2": { "HP": 5, "MP": 5, "SP": 3},
+            "3": { "HP": 6, "MP": 5, "SP": 3},
+            "4": { "HP": 7, "MP": 6, "SP": 4},
+            "5": { "HP": 8, "MP": 7, "SP": 4},
+            "6": { "HP": 10, "MP": 7, "SP": 5},
+            "7": { "HP": 11, "MP": 8, "SP": 6},
+            "8": { "HP": 13, "MP": 8, "SP": 6},
+            "9": { "HP": 15, "MP": 9, "SP": 7},
+            "10": { "HP": 18, "MP": 9, "SP": 7}
+        },
+        "starting-attributes": {
+            "STR": false,
+            "DEX": true,
+            "INT": true,
+            "WIS": false,
+            "CHA": true,
+            "END": false
+        },
+        "summary":"A silver-tongued wanderer with sturdy vitality and bright magic, though early stamina can run thin."
+    },
+    "Elf": {
+        "stats":{
+            "0": { "HP": 2, "MP": 3, "SP": 2},
+            "1": { "HP": 3, "MP": 4, "SP": 3},            
+            "2": { "HP": 4, "MP": 5, "SP": 3},
+            "3": { "HP": 5, "MP": 6, "SP": 4},
+            "4": { "HP": 6, "MP": 7, "SP": 4},
+            "5": { "HP": 7, "MP": 7, "SP": 5},
+            "6": { "HP": 8, "MP": 8, "SP": 5},
+            "7": { "HP": 10, "MP": 8, "SP": 6},
+            "8": { "HP": 12, "MP": 9, "SP": 6},
+            "9": { "HP": 14, "MP": 10, "SP": 7},
+            "10": { "HP": 16, "MP": 10, "SP": 7}
+        },
+        "starting-attributes": {
+            "STR": false,
+            "DEX": true,
+            "INT": false,
+            "WIS": true,
+            "CHA": false,
+            "END": true
+        },
+        "summary":"A poised mystic with keen wisdom, strong endurance, and deep mana, but a lighter frame in a hard fight."
+    },
+    "Felish": {
+        "stats":{
+            "0": { "HP": 2, "MP": 2, "SP": 3},
+            "1": { "HP": 3, "MP": 3, "SP": 4},            
+            "2": { "HP": 5, "MP": 4, "SP": 4},
+            "3": { "HP": 6, "MP": 4, "SP": 5},
+            "4": { "HP": 7, "MP": 5, "SP": 5},
+            "5": { "HP": 8, "MP": 5, "SP": 6},
+            "6": { "HP": 10, "MP": 6, "SP": 6},
+            "7": { "HP": 11, "MP": 7, "SP": 7},
+            "8": { "HP": 13, "MP": 8, "SP": 7},
+            "9": { "HP": 15, "MP": 9, "SP": 8},
+            "10": { "HP": 16, "MP": 9, "SP": 8}
+        },
+        "starting-attributes": {
+            "STR": false,
+            "DEX": true,
+            "INT": false,
+            "WIS": true,
+            "CHA": true,
+            "END": false
+        },
+        "summary":"A swift skirmisher with sharp stamina and charm, best when motion matters and mana demands stay modest."
+    },
+    "Fae": {
+        "stats":{
+            "0": { "HP": 1, "MP": 4, "SP": 2},
+            "1": { "HP": 2, "MP": 5, "SP": 3},            
+            "2": { "HP": 3, "MP": 6, "SP": 4},
+            "3": { "HP": 4, "MP": 7, "SP": 4},
+            "4": { "HP": 5, "MP": 7, "SP": 5},
+            "5": { "HP": 7, "MP": 8, "SP": 5},
+            "6": { "HP": 8, "MP": 8, "SP": 6},
+            "7": { "HP": 9, "MP": 9, "SP": 7},
+            "8": { "HP": 11, "MP": 9, "SP": 7},
+            "9": { "HP": 13, "MP": 10, "SP": 8},
+            "10": { "HP": 15, "MP": 10, "SP": 8}
+        },
+        "starting-attributes": {
+            "STR": false,
+            "DEX": false,
+            "INT": true,
+            "WIS": true,
+            "CHA": true,
+            "END": false
+        },
+        "summary":"A fragile spellbinder whose mana and stamina blossom beautifully, so long as danger is kept at arm's length."
+    },
+    "Human": {
+        "stats":{
+            "0": { "HP": 4, "MP": 2, "SP": 1},
+            "1": { "HP": 5, "MP": 3, "SP": 2},            
+            "2": { "HP": 6, "MP": 4, "SP": 3},
+            "3": { "HP": 7, "MP": 4, "SP": 4},
+            "4": { "HP": 8, "MP": 5, "SP": 4},
+            "5": { "HP": 9, "MP": 5, "SP": 5},
+            "6": { "HP": 10, "MP": 6, "SP": 5},
+            "7": { "HP": 12, "MP": 6, "SP": 6},
+            "8": { "HP": 14, "MP": 7, "SP": 6},
+            "9": { "HP": 16, "MP": 7, "SP": 7},
+            "10": { "HP": 18, "MP": 8, "SP": 8}
+        },
+        "starting-attributes": {
+            "STR": true,
+            "DEX": true,
+            "INT": true,
+            "WIS": false,
+            "CHA": false,
+            "END": false
+        },
+        "summary":"A versatile survivor with reliable health and broad talents, though wisdom and charm are not their first gifts."
+    },
+    "Halfling": {
+        "stats":{
+            "0": { "HP": 3, "MP": 2, "SP": 2},
+            "1": { "HP": 4, "MP": 3, "SP": 3},            
+            "2": { "HP": 5, "MP": 4, "SP": 4},
+            "3": { "HP": 6, "MP": 5, "SP": 4},
+            "4": { "HP": 7, "MP": 5, "SP": 5},
+            "5": { "HP": 8, "MP": 6, "SP": 5},
+            "6": { "HP": 9, "MP": 6, "SP": 6},
+            "7": { "HP": 11, "MP": 7, "SP": 6},
+            "8": { "HP": 13, "MP": 7, "SP": 7},
+            "9": { "HP": 15, "MP": 8, "SP": 7},
+            "10": { "HP": 17, "MP": 9, "SP": 8}
+        },
+        "starting-attributes": {
+            "STR": false,
+            "DEX": true,
+            "INT": false,
+            "WIS": false,
+            "CHA": true,
+            "END": true
+        },
+        "summary":"A nimble companion with charm and endurance to spare, trading raw might for steady, clever support."
+    },
+    "Slynn": {
+        "stats":{
+            "0": { "HP": 5, "MP": 1, "SP": 1},
+            "1": { "HP": 6, "MP": 2, "SP": 2},            
+            "2": { "HP": 7, "MP": 3, "SP": 3},
+            "3": { "HP": 8, "MP": 4, "SP": 3},
+            "4": { "HP": 9, "MP": 4, "SP": 4},
+            "5": { "HP": 11, "MP": 5, "SP": 4},
+            "6": { "HP": 12, "MP": 5, "SP": 5},
+            "7": { "HP": 14, "MP": 6, "SP": 6},
+            "8": { "HP": 16, "MP": 6, "SP": 6},
+            "9": { "HP": 18, "MP": 7, "SP": 7},
+            "10": { "HP": 20, "MP": 8, "SP": 7}
+        },
+        "starting-attributes": {
+            "STR": true,
+            "DEX": false,
+            "INT": true,
+            "WIS": true,
+            "CHA": false,
+            "END": false
+        },
+        "summary":"A relentless bruiser with unmatched health and practical instincts, but little patience for long spellslinging."
+    },
+    "Orc": {
+        "stats":{
+            "0": { "HP": 3, "MP": 1, "SP": 3},
+            "1": { "HP": 4, "MP": 2, "SP": 4},            
+            "2": { "HP": 6, "MP": 3, "SP": 4},
+            "3": { "HP": 7, "MP": 4, "SP": 5},
+            "4": { "HP": 8, "MP": 5, "SP": 5},
+            "5": { "HP": 9, "MP": 5, "SP": 6},
+            "6": { "HP": 10, "MP": 6, "SP": 6},
+            "7": { "HP": 12, "MP": 6, "SP": 7},
+            "8": { "HP": 14, "MP": 7, "SP": 7},
+            "9": { "HP": 16, "MP": 7, "SP": 8},
+            "10": { "HP": 18, "MP": 8, "SP": 8}
+        },
+        "starting-attributes": {
+            "STR": true,
+            "DEX": false,
+            "INT": true,
+            "WIS": false,
+            "CHA": false,
+            "END": true
+        },
+        "summary":"A fierce front-line force with heavy stamina and grit, less suited to subtle words or delicate work."
+    },
+    "Dwarf": {
+        "stats":{
+            "0": { "HP": 4, "MP": 1, "SP": 2},
+            "1": { "HP": 5, "MP": 2, "SP": 3},            
+            "2": { "HP": 7, "MP": 3, "SP": 3},
+            "3": { "HP": 8, "MP": 4, "SP": 4},
+            "4": { "HP": 9, "MP": 4, "SP": 4},
+            "5": { "HP": 10, "MP": 5, "SP": 5},
+            "6": { "HP": 11, "MP": 5, "SP": 5},
+            "7": { "HP": 13, "MP": 6, "SP": 6},
+            "8": { "HP": 15, "MP": 7, "SP": 6},
+            "9": { "HP": 17, "MP": 7, "SP": 7},
+            "10": { "HP": 19, "MP": 8, "SP": 7}
+        },
+        "starting-attributes": {
+            "STR": true,
+            "DEX": false,
+            "INT": false,
+            "WIS": true,
+            "CHA": false,
+            "END": true
+        },
+        "summary":"A stone-solid guardian with stout endurance and heavy health, though mana rises slowly from humble roots."
+    }
+
+}

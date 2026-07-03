@@ -1,0 +1,28 @@
+{
+  "name": "arydia-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "dev": "node --experimental-sqlite --import tsx src/index.ts",
+    "start": "node --experimental-sqlite --import tsx src/index.ts",
+    "register:commands": "tsx src/registerCommands.ts",
+    "test": "node --experimental-sqlite --test --import tsx --test-reporter=spec \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "discord.js": "^14.26.4",
+    "dotenv": "^16.4.7"
+  },
+  "overrides": {
+    "undici": "6.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
