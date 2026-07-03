@@ -80,7 +80,7 @@ test("getLevelUpPrompt includes the next level xp cost", () => {
 
   assert.equal(
     getLevelUpPrompt(character, data),
-    "Level up! Spend 3 XP at the Exiles' Guild, then choose one stat and one attribute to mark for level 1."
+    "**Level** up! Spend 3 XP at the Exiles' Guild, then choose one stat and one attribute to mark for **level** 1."
   );
 });
 
@@ -90,7 +90,7 @@ test("formatCharacterSheet matches the requested output shape", () => {
 
   assert.equal(
     formatCharacterSheet("Created Human character at level 0", character),
-    "Created Human character at level 0\n\nHP: 4\nMP: 2\nSP: 1\n\nSTR: 1\nDEX: 1\nINT: 1\nWIS: 0\nCHA: 0\nEND: 0"
+    "Created Human character at **level** 0\n\n**HP**: 4\n**MP**: 2\n**SP**: 1\n\n**STR**: 1\n**DEX**: 1\n**INT**: 1\n**WIS**: 0\n**CHA**: 0\n**END**: 0"
   );
 });
 
@@ -100,7 +100,7 @@ test("formatStatsPrompt shows current character sheet and next xp cost", () => {
 
   assert.equal(
     formatStatsPrompt(character, data),
-    "Human character at level 0\n\nHP: 4\nMP: 2\nSP: 1\n\nSTR: 1\nDEX: 1\nINT: 1\nWIS: 0\nCHA: 0\nEND: 0\n\nYou need 3 XP to level up to level 1.\nDo you want to check next level's stats and attributes?"
+    "Human character at **level** 0\n\n**HP**: 4\n**MP**: 2\n**SP**: 1\n\n**STR**: 1\n**DEX**: 1\n**INT**: 1\n**WIS**: 0\n**CHA**: 0\n**END**: 0\n\nYou need 3 XP to **level** up to **level** 1.\nDo you want to check next **level**'s stats and attributes?"
   );
 });
 
@@ -113,7 +113,7 @@ test("formatStatsPrompt handles max-level characters", () => {
 
   assert.equal(
     formatStatsPrompt(character, data),
-    "Human character at level 10\n\nHP: 4\nMP: 2\nSP: 1\n\nSTR: 1\nDEX: 1\nINT: 1\nWIS: 0\nCHA: 0\nEND: 0\n\nYou are already at maximum level."
+    "Human character at **level** 10\n\n**HP**: 4\n**MP**: 2\n**SP**: 1\n\n**STR**: 1\n**DEX**: 1\n**INT**: 1\n**WIS**: 0\n**CHA**: 0\n**END**: 0\n\nYou are already at maximum **level**."
   );
 });
 
@@ -123,7 +123,7 @@ test("formatNextLevelPreview shows current to next level values", () => {
 
   assert.equal(
     formatNextLevelPreview(character, data),
-    "Next level preview for Human level 1\n\nHP: 4 -> 5\nMP: 2 -> 3\nSP: 1 -> 2\n\nSTR: 1 -> 2\nDEX: 1 -> 2\nINT: 1 -> 2\nWIS: 0 -> 2\nCHA: 0 -> 2\nEND: 0 -> 2"
+    "Next **level** preview for Human **level** 1\n\n**HP**: 4 -> 5\n**MP**: 2 -> 3\n**SP**: 1 -> 2\n\n**STR**: 1 -> 2\n**DEX**: 1 -> 2\n**INT**: 1 -> 2\n**WIS**: 0 -> 2\n**CHA**: 0 -> 2\n**END**: 0 -> 2"
   );
 });
 

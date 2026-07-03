@@ -75,16 +75,16 @@ export function getLevelUpPrompt(character: CharacterRecord, data: ArydiaData): 
   }
 
   const nextLevel = character.level + 1;
-  return `Level up! Spend ${data.xpCosts[nextLevel]} XP at the Exiles' Guild, then choose one stat and one attribute to mark for level ${nextLevel}.`;
+  return `**Level** up! Spend ${data.xpCosts[nextLevel]} XP at the Exiles' Guild, then choose one stat and one attribute to mark for **level** ${nextLevel}.`;
 }
 
 export function formatCharacterSheet(title: string, character: CharacterRecord): string {
-  const statLines = STAT_KEYS.map((stat) => `${stat}: ${character.stats[stat]}`);
+  const statLines = STAT_KEYS.map((stat) => `**${stat}**: ${character.stats[stat]}`);
   const attributeLines = ATTRIBUTES.map(
-    (attribute) => `${attribute}: ${character.attributes[attribute]}`
+    (attribute) => `**${attribute}**: ${character.attributes[attribute]}`
   );
 
-  return `${title}\n\n${statLines.join("\n")}\n\n${attributeLines.join("\n")}`;
+  return `${boldLevelText(title)}\n\n${statLines.join("\n")}\n\n${attributeLines.join("\n")}`;
 }
 
 export function formatStatsPrompt(character: CharacterRecord, data: ArydiaData): string {
@@ -94,11 +94,11 @@ export function formatStatsPrompt(character: CharacterRecord, data: ArydiaData):
   );
 
   if (character.level >= 10) {
-    return `${sheet}\n\nYou are already at maximum level.`;
+    return `${sheet}\n\nYou are already at maximum **level**.`;
   }
 
   const nextLevel = character.level + 1;
-  return `${sheet}\n\nYou need ${data.xpCosts[nextLevel]} XP to level up to level ${nextLevel}.\nDo you want to check next level's stats and attributes?`;
+  return `${sheet}\n\nYou need ${data.xpCosts[nextLevel]} XP to **level** up to **level** ${nextLevel}.\nDo you want to check next **level**'s stats and attributes?`;
 }
 
 export function formatNextLevelPreview(character: CharacterRecord, data: ArydiaData): string {
@@ -114,13 +114,13 @@ export function formatNextLevelPreview(character: CharacterRecord, data: ArydiaD
 
   const nextAttributeValue = attributeValueForLevel(nextLevel);
   const statLines = STAT_KEYS.map(
-    (stat) => `${stat}: ${character.stats[stat]} -> ${definition.stats[nextLevel][stat]}`
+    (stat) => `**${stat}**: ${character.stats[stat]} -> ${definition.stats[nextLevel][stat]}`
   );
   const attributeLines = ATTRIBUTES.map(
-    (attribute) => `${attribute}: ${character.attributes[attribute]} -> ${nextAttributeValue}`
+    (attribute) => `**${attribute}**: ${character.attributes[attribute]} -> ${nextAttributeValue}`
   );
 
-  return `Next level preview for ${character.characterName} level ${nextLevel}\n\n${statLines.join("\n")}\n\n${attributeLines.join("\n")}`;
+  return `Next **level** preview for ${character.characterName} **level** ${nextLevel}\n\n${statLines.join("\n")}\n\n${attributeLines.join("\n")}`;
 }
 
 export function formatHelpText(): string {
@@ -132,4 +132,8 @@ export function formatHelpText(): string {
     "/delete - Delete your bound character after confirmation.",
     "/help - Show this command list."
   ].join("\n");
+}
+
+function boldLevelText(text: string): string {
+  return text.replace(/\blevel\b/gi, (match) => `**${match}**`);
 }
