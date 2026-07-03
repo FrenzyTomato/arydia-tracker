@@ -333,7 +333,7 @@ async function handleStatsButton(
   data: ArydiaData
 ): Promise<void> {
   if (action === "no") {
-    await interaction.deferUpdate();
+    await interaction.update({ components: [] });
     return;
   }
 
