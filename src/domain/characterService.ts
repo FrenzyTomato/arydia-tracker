@@ -75,7 +75,7 @@ export function getLevelUpPrompt(character: CharacterRecord, data: ArydiaData): 
   }
 
   const nextLevel = character.level + 1;
-  return `**Level** up! Spend ${data.xpCosts[nextLevel]} XP at the Exiles' Guild, then choose one stat and one attribute to mark for **level** ${nextLevel}.`;
+  return `Level up! Spend ${data.xpCosts[nextLevel]} XP at the Exiles' Guild, then choose one stat and one attribute to mark for **level ${nextLevel}**.`;
 }
 
 export function formatCharacterSheet(title: string, character: CharacterRecord): string {
@@ -94,11 +94,11 @@ export function formatStatsPrompt(character: CharacterRecord, data: ArydiaData):
   );
 
   if (character.level >= 10) {
-    return `${sheet}\n\nYou are already at maximum **level**.`;
+    return `${sheet}\n\nYou are already at maximum level.`;
   }
 
   const nextLevel = character.level + 1;
-  return `${sheet}\n\nYou need ${data.xpCosts[nextLevel]} XP to **level** up to **level** ${nextLevel}.\nDo you want to check next **level**'s stats and attributes?`;
+  return `${sheet}\n\nYou need ${data.xpCosts[nextLevel]} XP to level up to **level ${nextLevel}**.\nDo you want to check next level's stats and attributes?`;
 }
 
 export function formatNextLevelPreview(character: CharacterRecord, data: ArydiaData): string {
@@ -120,7 +120,7 @@ export function formatNextLevelPreview(character: CharacterRecord, data: ArydiaD
     (attribute) => `**${attribute}**: ${character.attributes[attribute]} -> ${nextAttributeValue}`
   );
 
-  return `Next **level** preview for ${character.characterName} **level** ${nextLevel}\n\n${statLines.join("\n")}\n\n${attributeLines.join("\n")}`;
+  return `Next level preview for ${character.characterName} **level ${nextLevel}**\n\n${statLines.join("\n")}\n\n${attributeLines.join("\n")}`;
 }
 
 export function formatHelpText(): string {
@@ -135,5 +135,5 @@ export function formatHelpText(): string {
 }
 
 function boldLevelText(text: string): string {
-  return text.replace(/\blevel\b/gi, (match) => `**${match}**`);
+  return text.replace(/\blevel\s+\d+\b/gi, (match) => `**${match}**`);
 }
